@@ -161,8 +161,7 @@ def team_names
   team_arr = []
   game_hash.each do |place, team|
     if team == :team_name
-      team_arr << team[:team_name]
-      binding.pry
+      team_arr.push(team[:team_name])
     end
   end
 end
