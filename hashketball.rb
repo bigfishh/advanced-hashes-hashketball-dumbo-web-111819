@@ -221,10 +221,11 @@ def most_points_scored
     team[:players].each do |player|
       if player[:points] > most_points
         most_points = player[:points]
-        return player[:name]
+        player_mostp = player[:name]
       end
     end
   end
+  player_mostp
 end
 
 
