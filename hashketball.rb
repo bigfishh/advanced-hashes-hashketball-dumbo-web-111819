@@ -183,5 +183,15 @@ end
 def player_stats(player_name)
   #returns a hash of that player's stats
   new_hash = {}
-  game_hash.
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players
+        data.each do |player|
+          if player[:player_name] == player_name
+            new_hash[:]
+          end
+        end
+      end
+    end
+  end
 end
