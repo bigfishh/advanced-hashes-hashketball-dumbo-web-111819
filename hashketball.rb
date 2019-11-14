@@ -205,8 +205,7 @@ def big_shoe_rebounds
     team.each do |attribute, data|
       if attribute == :players 
         data.each do |players|
-          sized_shoe = players[shoe_size].sort!
-          binding.pry 
+          sized_shoe = players[shoe_size].
         end
       end
     end
