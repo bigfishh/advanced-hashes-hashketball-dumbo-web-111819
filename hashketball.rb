@@ -164,6 +164,7 @@ def team_names
       team_arr.push(team[:team_name])
     end
   end
+  team_arr
 end
 
 
