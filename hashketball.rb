@@ -221,8 +221,8 @@ def most_points_scored
     team[:players].each do |player|
       if player[:points] > most_points
         most_points = player[:points]
+        binding.pry
       end
-      return player[:player_name]
     end
   end
 end
