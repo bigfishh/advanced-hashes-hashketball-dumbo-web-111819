@@ -158,13 +158,9 @@ end
 
 def team_names
   #returns an array of the team names 
-  team_arr = []
-  game_hash.each do |place, team|
-    if team == :team_name
-      team_arr.push(team[:team_name])
-    end
+  game_hash.map do |place, team|
+    return team[:team_name]
   end
-  team_arr
 end
 
 
