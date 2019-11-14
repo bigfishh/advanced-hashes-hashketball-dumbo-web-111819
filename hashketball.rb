@@ -200,5 +200,15 @@ def player_stats(player_name)
 end
 
 def big_shoe_rebounds
-  
+  #return the bumber of rebounds associated witht eh player that has the largest shoe size
+  game_hash.each do |place, team|
+    team.each do |attribute, data|
+      if attribute == :players 
+        data.each do |players|
+          sized_shoe = players[shoe_size].sort!
+          binding.pry
+        end
+      end
+    end
+  end
 end
