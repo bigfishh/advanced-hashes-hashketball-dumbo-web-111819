@@ -209,6 +209,7 @@ def big_shoe_rebounds
           big_shoe = (shoesi.length-1)
           if players[shoe] == big_shoe 
             puts players[:rebounds]
+          end
         end
       end
     end
