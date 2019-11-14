@@ -166,5 +166,7 @@ end
 def player_numbers(name)
   #returns an array of the jersey numbers for that team
   game_hash.map do |place, team|
+    binding.pry
+  end
 end
 
