@@ -165,7 +165,6 @@ def team_names
       binding.pry
     end
   end
-  team_arr
 end
 
 
